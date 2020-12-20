@@ -1,40 +1,31 @@
 import React, { useState } from "react";
-import Repo from "./Repo";
+import {Redirect} from "react-router-dom";
 import RepoList from "./RepoList";
 
 function SearchForm() {
 
     const [username, setUsername] = useState("");
 
-    const saveUsername = (event) => {
-        event.preventDefault();
-        setUsername(event.target.value)
-    }
-
     return (
         <div>
 
             <div className="search-container">
-                <h1>Search for users' GitHub Repo List</h1>
+                <h1>Search for user's GitHub Repo List</h1>
             </div>
 
             <div>
                 <form>
-                    <input onSubmit={saveUsername}
+                    <input
                         type="text"
                         value={username}
-                        placeholder="Enter GitHub username"
+                        placeholder="Copy & paste full GitHub username here. Typing doesn't work yet :("
                         onChange={(e) => setUsername(e.target.value)}
                     />
-                </form> 
+                </form>
             </div>
 
-            {username && <RepoList username={username}/>}
-            
-
-
-
-
+            {username && <RepoList username={username} />}
+        
         </div>
     )
 
