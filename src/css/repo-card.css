@@ -1,17 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
 .repo-list-container h1 {
-    margin-top: 40px;
-    text-align: center;
     font-size: 50px;
-    color: #0B351C;
+    color: #581b98;
+    border: 2px solid #574b90;
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    /* overflow: scroll; */
 }
 
 .repo-list {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .repo-card {
-    border: 1px solid #00FA9A;
+    border: 1px solid #482ff7;
     /* width: 50%; */
     height: 230px;
     margin: 0 auto;
@@ -27,17 +37,23 @@
     margin-top: 35px;
     font-size: 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #303a52;
 }
 
 .repo-card-description {
-    margin-top: 20px;
     font-size: 20px;
+    font-family: 'Asap', sans-serif;
+    color: #1e2a78;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .repo-card-date {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .repo-error-msg {
     font-size: 40px;
+    text-align: center;
 }
