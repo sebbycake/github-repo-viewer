@@ -1,0 +1,43 @@
+.repo-list-container h1 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 50px;
+    color: #0B351C;
+}
+
+.repo-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.repo-card {
+    border: 1px solid #00FA9A;
+    /* width: 50%; */
+    height: 230px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 5px #dfdfdf;
+    background: #fafafa;
+    flex: 0 0 30%;
+}
+
+.repo-card-name {
+    margin-top: 35px;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.repo-card-description {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.repo-card-date {
+    margin-top: 50px;
+}
+
+.repo-error-msg {
+    font-size: 40px;
+}
