@@ -3,7 +3,6 @@ import Repo from "./Repo";
 
 function RepoList(props) {
 
-
     const [repoData, setRepoData] = useState([])
 
     const fetchData = async () => {
@@ -16,12 +15,13 @@ function RepoList(props) {
         fetchData();
     }, []);
 
+    const repo = repoData.length === 1 ? 'Repository' : 'Repositories'
     const repoList = repoData.length > 0 && repoData.map(repo => <Repo key={repo.id} data={repo} />)
     const repoErrorMsg = repoData.length <= 0 && "Oops... There is no repository for this user."
 
     return (
         <div className="repo-list-container">
-            <h1>{props.username}'s Repositories</h1>
+            <h1>{props.username}'s {repo}</h1>
             <div className="repo-list">
                 {repoList}
             </div>

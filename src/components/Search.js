@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import {Redirect} from "react-router-dom";
 import RepoList from "./RepoList";
 
 function SearchForm() {
@@ -20,12 +19,13 @@ function SearchForm() {
                         value={username}
                         placeholder="Copy & paste full GitHub username here. Typing doesn't work yet :("
                         onChange={(e) => setUsername(e.target.value)}
+                        required
                     />
                 </form>
             </div>
 
             {username && <RepoList username={username} />}
-        
+
         </div>
     )
 

@@ -1,6 +1,6 @@
 # Github Repositories Viewer
 
-A webpage to display GitHub repositories of a user.
+A single-page application to display GitHub repositories of a user.
 
 
 ## About The Project
@@ -10,7 +10,6 @@ A webpage to display GitHub repositories of a user.
 * [React](https://reactjs.org/) - Front-end web framework used
 * [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) - Command used to create development environment for React project
 * [GitHub REST API](https://docs.github.com/en/free-pro-team@latest/rest) 
-
 
 
 ## Getting Started

@@ -25,12 +25,12 @@
     /* width: 50%; */
     height: 230px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 10px 5px #dfdfdf;
     background: #fafafa;
-    flex: 0 0 30%;
+    flex: 0 0 40%;
 }
 
 .repo-card-name {
